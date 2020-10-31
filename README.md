@@ -1,4 +1,4 @@
-# forex
+# Forex
 Foreign Exchange Rate Django App
 
 #  Installation
