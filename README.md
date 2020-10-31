@@ -2,7 +2,7 @@
 Foreign Exchange Rate Django App
 
 #  Installation
-$ mkvirtualenv -p python3.8 forex
+$ mkvirtualenv -p python3.8 fx
 
 $ pip install -r requirements.txt
 
