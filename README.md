@@ -6,6 +6,7 @@ $ mkvirtualenv -p python3.8 forex
 
 $ pip install -r requirements.txt
 
+# Optional steps
 $ python manage.py makemigrations
 
 $ python manage.py migrate
