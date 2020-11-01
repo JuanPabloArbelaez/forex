@@ -16,8 +16,8 @@ def get_json_data(url):
 def loop_through_dict(dictionary, added_value):
     for k, v in dictionary.items():
         nv = add_value(v, added_value)
-        category = check_category(k, nv)
-        dictionary[k] = (category, v, nv)
+        cat = check_category(k, nv)
+        dictionary[k] = (cat, v, nv)
 
 
 def add_value(v, added_value):
