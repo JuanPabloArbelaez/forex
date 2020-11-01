@@ -21,9 +21,7 @@ def loop_through_dict(dictionary, added_value):
 
 
 def add_value(v, added_value):
-    print(v)
     v += added_value
-    print(v)
     return v
 
 
