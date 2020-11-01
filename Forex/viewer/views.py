@@ -17,6 +17,7 @@ def index(request):
         context = {
             'date': json_data.get('date'),
             'base': json_data.get('base'),
+            'added_val': ADDED_VALUE,
             'rates': rates
             }
 
