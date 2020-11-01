@@ -2,7 +2,6 @@ import requests
 import json
 
 
-
 def get_json_data(url):
     try:
         r = requests.get(url)
@@ -16,13 +15,17 @@ def get_json_data(url):
 
 def loop_through_dict(dictionary, added_value):
     for k, v in dictionary.items():
-        dictionary[k] = add_value(v, added_value)
+        v = add_value(v, added_value)
+        dictionary[k] = v
         dictionary[k] = check_category(k, v)
 
 
 def add_value(v, added_value):
+    print(v)
     v += added_value
+    print(v)
     return v
+
 
 def check_category(k, v):
     if k == 'HKD' or is_even(v):
