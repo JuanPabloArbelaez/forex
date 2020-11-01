@@ -15,8 +15,9 @@ def get_json_data(url):
 
 def loop_through_dict(dictionary, added_value):
     for k, v in dictionary.items():
-        v = add_value(v, added_value)
-        dictionary[k] = check_category(k, v)
+        nv = add_value(v, added_value)
+        category = check_category(k, nv)
+        dictionary[k] = (category, v, nv)
 
 
 def add_value(v, added_value):
@@ -26,11 +27,9 @@ def add_value(v, added_value):
 
 def check_category(k, v):
     if k == 'HKD' or is_even(v):
-        v = (v, 'table-danger')
+        return 'table-danger'
     else: 
-        v = (v, None)
-
-    return v
+        return None
 
 
 def is_even(number):

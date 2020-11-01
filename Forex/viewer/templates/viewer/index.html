@@ -13,11 +13,13 @@
         <tr>
             <th scope="col">Currency</th>
             <th scope="col">Value</th>
+            <th scope="col">New Value</th>
         </tr>
     {% for r, v in rates.items %}
-        <tr >
-            <td class={{ v.1 }}>{{ r }}</td>
-            <td class={{ v.1 }}>{{ v.0 }}</td>
+        <tr class={{ v.0 }}>
+            <td >{{ r }}</td>
+            <td>{{ v.1}}</td>
+            <td>{{ v.2 }}</td>
         </tr>
     {% endfor %}
     </table>
